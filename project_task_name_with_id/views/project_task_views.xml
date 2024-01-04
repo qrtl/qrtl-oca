@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="project_task_kanban_view_inherit" model="ir.ui.view">
+        <field name="name">project.task.kanban.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_kanban" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//strong[contains(@class,'o_kanban_record_title')]"
+                position="before"
+            >
+                <strong>[<field name="id" />] </strong>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_task_tree2_inherit" model="ir.ui.view">
+        <field name="name">project.task.kanban.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_tree2" />
+        <field name="arch" type="xml">
+            <xpath expr="field[@name='name']" position="before">
+                <field name="id" string="Task Number" />
+            </xpath>
+        </field>
+    </record>
+    <record id="project_sharing_project_task_view_kanban_inherit" model="ir.ui.view">
+        <field name="name">project.task.kanban.inherit</field>
+        <field name="model">project.task</field>
+        <field
+            name="inherit_id"
+            ref="project.project_sharing_project_task_view_kanban"
+        />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//strong[contains(@class,'o_kanban_record_title')]"
+                position="before"
+            >
+                <strong>[<field name="id" />] </strong>
+            </xpath>
+        </field>
+    </record>
+    <record id="project_sharing_project_task_view_tree_inherit" model="ir.ui.view">
+        <field name="name">project.task.kanban.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.project_sharing_project_task_view_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="field[@name='name']" position="before">
+                <field name="id" string="Task Number" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
