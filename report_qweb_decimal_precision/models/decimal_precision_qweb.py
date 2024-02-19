@@ -6,7 +6,7 @@ from odoo import fields, models
 
 class DecimalPrecisioQweb(models.Model):
     _name = "decimal.precision.qweb"
-    _description = "Decimal Precision Qweb"
+    _description = "Decimal Precision QWeb"
     _order = "res_model_id, field_id"
 
     res_model_id = fields.Many2one(
