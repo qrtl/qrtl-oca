@@ -114,7 +114,7 @@ msgstr "QWeb精度検索"
 
 #. module: report_qweb_decimal_precision
 #: model:ir.model,name:report_qweb_decimal_precision.model_ir_qweb_field_float
-msgid "QWeb Field Float"
+msgid "Qweb Field Float"
 msgstr "QWeb浮動小数点項目"
 
 #. module: report_qweb_decimal_precision
