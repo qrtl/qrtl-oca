@@ -1,7 +1,7 @@
 # Copyright 2024 Quartile Limited (https://www.quartile.com)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
-    "name": "Report Qweb Decimal Precision",
+    "name": "Report QWeb Decimal Precision",
     "version": "16.0.1.0.0",
     "category": "Technical Settings",
     "license": "AGPL-3",
