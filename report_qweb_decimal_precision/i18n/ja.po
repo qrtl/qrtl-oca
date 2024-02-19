@@ -48,7 +48,7 @@ msgstr "QWeb小数点精度"
 
 #. module: report_qweb_decimal_precision
 #: model:ir.model,name:report_qweb_decimal_precision.model_decimal_precision_qweb
-msgid "Decimal Precision QWeb"
+msgid "Decimal Precision Qweb"
 msgstr "QWeb小数点精度"
 
 #. module: report_qweb_decimal_precision
@@ -114,8 +114,8 @@ msgstr "QWeb精度検索"
 
 #. module: report_qweb_decimal_precision
 #: model:ir.model,name:report_qweb_decimal_precision.model_ir_qweb_field_float
-msgid "Qweb Field Float"
-msgstr "Qweb浮動小数点項目"
+msgid "QWeb Field Float"
+msgstr "QWeb浮動小数点項目"
 
 #. module: report_qweb_decimal_precision
 #: model:ir.model.fields,field_description:report_qweb_decimal_precision.field_decimal_precision_qweb__uom_id
