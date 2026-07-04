@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="search_messages_tool" model="ai.tool">
+        <field name="name">search_messages</field>
+        <field name="description">
+            Search across all chatter messages by one or more keywords (matches
+            subject, body and record name). Returns, per keyword, the matching
+            messages' content plus the model/id of the record they are attached to.
+        </field>
+        <field name="model_id" ref="mail.model_mail_message" />
+        <field name="function_name">_ai_search_messages</field>
+        <field name="kind">generic</field>
+    </record>
+
+    <record id="get_messages_for_records_tool" model="ai.tool">
+        <field name="name">get_messages_for_records</field>
+        <field name="description">
+            Given a list of {model, id} record references, return the full chatter
+            message history logged against each of those records.
+        </field>
+        <field name="model_id" ref="mail.model_mail_message" />
+        <field name="function_name">_ai_get_messages_for_records</field>
+        <field name="kind">generic</field>
+    </record>
+
+</odoo>
